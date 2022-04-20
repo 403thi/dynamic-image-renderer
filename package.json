@@ -4,12 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "udev":"sucrase-node src/server.ts",
+    "run": "sucrase-node",
+    "udev": "sucrase-node src/server.ts",
     "dev": "nodemon --exec sucrase-node src/server.ts",
     "build": "sucrase ./src -d ./dist --transforms typescript,imports"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "ejs": "^3.1.7",
     "express": "^4.17.3"
   },
   "devDependencies": {

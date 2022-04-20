@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" style=<%=
+    `background-color:${bgColor};
+    width:560px;
+    height:${height}px;
+    `.replace(/\s+/g, '') // remove whitespace and breaklines
+    %>>
+    <style>
+        .text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            fill: <%= textColor %>;
+        }
+        .desc {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        .border-line {
+            stroke:red;
+            stroke-width: 10px;
+
+        }
+    </style>
+    <!-- <rect width="560" height="300" x="0" y="0" class="border"> -->
+
+    <!-- border -->
+    
+    <line class="border-line" x2="560" /> <!-- top: start in x: 0 and go to x: 560 -->
+    <line class="border-line" x1="560" x2="560" y2="<%= height %>" /> <!-- right: x forever in: MAX_WIDTH  start y:TOP and go to BOTTOM -->
+    <line class="border-line" x1="560" y1="<%= height %>" y2="<%= height %>"/> <!-- bottom: x: MAX_WIDTH to 0 and Y in BOTTOM -->
+    <line class="border-line" y2="<%= height %>"/> <!-- left: start all in 0 and go to down  -->
+
+    <text x="180" y="150" class="text">
+        <%= text %>
+    </text>
+    <text x="220" y="180" class="desc">
+        <%= desc %>
+    </text>
+</svg>
