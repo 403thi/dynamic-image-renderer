@@ -24,21 +24,25 @@
             --border-color: <%= borderColor %>;
             --border-opacity: <%=borderOpacity%>%;
             --border-width: 10px;
+            --text-font-family: 'Franklin Gothic', Arial, sans-serif;
+            --text-font-weight: bold;
         }
         .title {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: var(--text-font-family);
             font-size: var(--title-font-size);
+            font-weight: var(--text-font-weight);
             fill: var(--title-color);
-
+            
             <%= titleShadow === "true" ?
                 "text-shadow: 0 0 10px #000;"
                 : ""
-            %>
+                %>
             <%= textAnimation.style %>
         }
         .subtitle {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: var(--text-font-family);
             font-size: var(--subtitle-font-size);
+            font-weight: var(--text-font-weight);
             fill: var(--subtitle-color);
 
             <%= subtitleShadow === "true" ?
