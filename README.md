@@ -118,7 +118,7 @@ Parameter | Default | Description
 ## Subtitle
 Parameter | Default
 -----|-----
-`subtitle` | `a open source project`
+`subtitle` | `dynamic image renderer.`
 `subtitleColor` | `#EEE`
 `subtitlePositionX` | `60` (0..100)
 `subtitlePositionY` | `67` (0..100)

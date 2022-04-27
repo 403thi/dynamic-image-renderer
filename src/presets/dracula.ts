@@ -7,7 +7,7 @@ function dracula(): imageSettings {
         ... {
             titleColor: "#bd93f9",
             titleBgColor: "#44475a",
-            subtitle: "// a open source project",
+            subtitle: "// dynamic image renderer.",
             subtitleColor: "#6272a4",
             subtitleShadow: "false",
             backgroundColor: "#282a36",
