@@ -1,7 +1,7 @@
-<img src="https://dynamic-image-renderer.vercel.app/api">
-
 <div align="center">
-
+ 
+<img src="https://dynamic-image-renderer.vercel.app/api">
+ 
 # Dynamic Image Renderer API
 
 ### easy to use - open source
@@ -128,7 +128,7 @@ Parameter | Default
 `subtitleShadow` | `true`
 
 
-## Effect
+## Effects
 Parameter | Default | Description
 -----|-----|-----
 `glowColor` | `none` | Color used in animations like "flicker" or "pulse", for example.
@@ -148,8 +148,7 @@ Parameter | Default
 
 `<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=popup">`
 
-<img src="https://dynamic-image-renderer.vercel.app/api?
-textAnimation=popup">
+<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=popup">
 
 ## Fade-in (fadein)
 [!] Played when is loaded.
