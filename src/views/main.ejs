@@ -1,38 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" style=<%=
-    `background-color:${bgColor};
-    width:560px;
-    height:${height}px;
-    `.replace(/\s+/g, '') // remove whitespace and breaklines
-    %>>
+<%
+    // get animation style and keyframes
+    textAnimation = getAnimation(textAnimation) 
+%>
+<%# SVG definition %>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    width="<%= width %>"
+    height="<%= height %>"
+    viewBox="0 0 <%= width %> <%= height %>"
+    style="<%=`
+    background:${backgroundColor};
+    `%>">
+
     <style>
-        .text {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 50px;
-            fill: <%= textColor %>;
+        /* SVG STYLE */
+        :root {
+            --glow-color: <%= glowColor %>;
+            --title-font-size: <%= titleFontSize %>px;
+            --title-color:  <%= titleColor %>;
+            --subtitle-font-size: <%= subtitleFontSize %>px;
+            --subtitle-color: <%= subtitleColor %>;
+            --border-color: <%= borderColor %>;
+            --border-opacity: <%=borderOpacity%>%;
+            --border-width: 10px;
         }
-        .desc {
+        .title {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 20px;
+            font-size: var(--title-font-size);
+            fill: var(--title-color);
+
+            <%= titleShadow === "true" ?
+                "text-shadow: 0 0 10px #000;"
+                : ""
+            %>
+            <%= textAnimation.style %>
+        }
+        .subtitle {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: var(--subtitle-font-size);
+            fill: var(--subtitle-color);
+
+            <%= subtitleShadow === "true" ?
+                "text-shadow: 0 0 10px #000;"
+                : ""
+            %>
+            <%= textAnimation.style %>
         }
         .border-line {
-            stroke:red;
-            stroke-width: 10px;
+
+            stroke: var(--border-color);
+            stroke-width: var(--border-width);
+            opacity: var(--border-opacity);
 
         }
+        
+        <%= textAnimation.keyframes %>
     </style>
-    <!-- <rect width="560" height="300" x="0" y="0" class="border"> -->
 
-    <!-- border -->
-    
-    <line class="border-line" x2="560" /> <!-- top: start in x: 0 and go to x: 560 -->
-    <line class="border-line" x1="560" x2="560" y2="<%= height %>" /> <!-- right: x forever in: MAX_WIDTH  start y:TOP and go to BOTTOM -->
-    <line class="border-line" x1="560" y1="<%= height %>" y2="<%= height %>"/> <!-- bottom: x: MAX_WIDTH to 0 and Y in BOTTOM -->
+    <!-- border -->    
+    <line class="border-line" x2="<%=width%>" /> <!-- top: start in x: 0 and go to x: 560 -->
+    <line class="border-line" x1="<%=width%>" x2="<%=width%>" y2="<%= height %>" /> <!-- right: x forever in: MAX_WIDTH  start y:TOP and go to BOTTOM -->
+    <line class="border-line" x1="<%=width%>" y1="<%= height %>" y2="<%= height %>"/> <!-- bottom: x: MAX_WIDTH to 0 and Y in BOTTOM -->
     <line class="border-line" y2="<%= height %>"/> <!-- left: start all in 0 and go to down  -->
 
-    <text x="180" y="150" class="text">
-        <%= text %>
+    <%# texts backgrounds %>
+    
+    <!-- title background -->
+    <% var titleBgWidth = (title.length * (+titleFontSize / 1.5))  %>
+    <% var titleBgHeight = +titleFontSize + 10 %>
+
+    <rect width="<%= titleBgWidth %>" 
+        height="<%= titleBgHeight %>"
+        x="<%= titlePositionX %>%"
+        y="<%= titlePositionY %>%"
+        fill="<%= titleBgColor %>"
+        opacity="<%= titleBgOpacity %>%"
+        stroke="#000"
+        stroke-width="0.2"
+        rx="15" ry="15"
+        transform="translate(-<%= titleBgWidth / 2 %>, -<%= titleBgHeight / 2 %>)"
+    />
+
+    <!-- subtitle background -->
+    <% var subtitleBgWidth = (subtitle.length * (+subtitleFontSize / 1.5))  %>
+    <% var subtitleBgHeight = +subtitleFontSize + 10 %>
+
+    <rect width="<%= subtitleBgWidth %>" 
+        height="<%= subtitleBgHeight %>"
+        x="<%= subtitlePositionX %>%"
+        y="<%= subtitlePositionY %>%"
+        fill="<%= subtitleBgColor %>"
+        opacity="<%= subtitleBgOpacity %>%"
+        rx="15" ry="15"
+        transform="translate(-<%= subtitleBgWidth / 2 %>, -<%= subtitleBgHeight / 2 %>)"
+    />
+
+    <%# title definition %>
+    <text text-anchor="middle"
+    alignment-baseline="middle" 
+          x="<%= titlePositionX %>%"
+          y="<%= titlePositionY %>%"
+          class="title">
+        <%= title %>
     </text>
-    <text x="220" y="180" class="desc">
-        <%= desc %>
+    
+    <%# subtitle definition %>
+    <text text-anchor="middle"
+          alignment-baseline="middle"
+          x="<%= subtitlePositionX %>%"
+          y="<%= subtitlePositionY %>%"
+          class="subtitle">
+        <%= subtitle %>
     </text>
 </svg>

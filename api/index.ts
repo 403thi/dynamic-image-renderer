@@ -1,6 +1,8 @@
 import express from "express"
 import cors from "cors"
-import routes from "./routes"
+import routes from "../src/routes"
+import "ejs"
+
 class App {
     express: express.Application
 
@@ -13,7 +15,7 @@ class App {
 
     engineConfig() {
         this.express.set('view engine', 'ejs')
-        this.express.set('views', './src/views')
+        this.express.set('views', __dirname+'/../src/views')
     }
 
     middlewares() {
