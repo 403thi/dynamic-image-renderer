@@ -1,4 +1,4 @@
-<img src="https://dynamic-image-render.vercel.app/api">
+<img src="https://dynamic-image-renderer.vercel.app/api">
 
 <div align="center">
 
@@ -86,14 +86,14 @@ Inspired in [Capsule Render](https://github.com/kyechan99/capsule-render/) proje
 
 In HTML, link the URL in `src`
 
-`<img src="https://dynamic-image-render.vercel.app/api?title=myTitle&subtitle=mySubtitle">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?title=myTitle&subtitle=mySubtitle">`
 
 In Markdown, you can uses HTML way or the markdown method.
 
-`![Image Description](https://dynamic-image-render.vercel.app/api?title=myTitle&subtitle=mySubtitle)`
+`![Image Description](https://dynamic-image-renderer.vercel.app/api?title=myTitle&subtitle=mySubtitle)`
 
 
-<img src="https://dynamic-image-render.vercel.app/api?title=myTitle&subtitle=mySubtitle">
+<img src="https://dynamic-image-renderer.vercel.app/api?title=myTitle&subtitle=mySubtitle">
  
 # Parameters
 
@@ -146,77 +146,77 @@ Parameter | Default
 ## Pop-up (popup)
 [!] Played when is loaded.
 
-`<img src="https://dynamic-image-render.vercel.app/api?textAnimation=popup">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=popup">`
 
-<img src="https://dynamic-image-render.vercel.app/api?
+<img src="https://dynamic-image-renderer.vercel.app/api?
 textAnimation=popup">
 
 ## Fade-in (fadein)
 [!] Played when is loaded.
 
-`<img src="https://dynamic-image-render.vercel.app/api?textAnimation=fadein">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=fadein">`
 
-<img src="https://dynamic-image-render.vercel.app/api?textAnimation=fadein">
+<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=fadein">
 
 ## Pulse (pulse)
 
 ***Note: Pulse and Flicker needs a glowColor parameter, because it's "none" by default.***
 
-`<img src="https://dynamic-image-render.vercel.app/api?textAnimation=pulse&glowColor=white">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=pulse&glowColor=white">`
 
-<img src="https://dynamic-image-render.vercel.app/api?textAnimation=pulse&glowColor=white">
+<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=pulse&glowColor=white">
 
 ## Flicker (flicker)
 
 ***Note: Pulse and Flicker needs a glowColor parameter, because it's "none" by default.***
 
-`<img src="https://dynamic-image-render.vercel.app/api?textAnimation=flicker&glowColor=white">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=flicker&glowColor=white">`
 
-<img src="https://dynamic-image-render.vercel.app/api?textAnimation=flicker&glowColor=white">
+<img src="https://dynamic-image-renderer.vercel.app/api?textAnimation=flicker&glowColor=white">
 
 # Presets
 See each preset configuration in [files](src/presets)
 ## Default
-`<img src="https://dynamic-image-render.vercel.app/api">`
+`<img src="https://dynamic-image-renderer.vercel.app/api">`
 
-<img src="https://dynamic-image-render.vercel.app/api">
+<img src="https://dynamic-image-renderer.vercel.app/api">
 
 ## Minimalist
-`<img src="https://dynamic-image-render.vercel.app/api?preset=minimalist">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?preset=minimalist">`
 
-<img src="https://dynamic-image-render.vercel.app/api?preset=minimalist">
+<img src="https://dynamic-image-renderer.vercel.app/api?preset=minimalist">
 
 ## Dracula
-`<img src="https://dynamic-image-render.vercel.app/api?preset=dracula">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?preset=dracula">`
 
-<img src="https://dynamic-image-render.vercel.app/api?preset=dracula">
+<img src="https://dynamic-image-renderer.vercel.app/api?preset=dracula">
 
 ## Hub
 Note: You will probably need to change positions of title and subtitle.
 
-`<img src="https://dynamic-image-render.vercel.app/api?preset=hub">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?preset=hub">`
 
-<img src="https://dynamic-image-render.vercel.app/api?preset=hub">
+<img src="https://dynamic-image-renderer.vercel.app/api?preset=hub">
 
 ## Monokai
-`<img src="https://dynamic-image-render.vercel.app/api?preset=monokai">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?preset=monokai">`
 
-<img src="https://dynamic-image-render.vercel.app/api?preset=monokai">
+<img src="https://dynamic-image-renderer.vercel.app/api?preset=monokai">
 
 
 # Using presets and animations
 
 ## Minimalist preset with pulse animation
-`<img src="https://dynamic-image-render.vercel.app/api?preset=minimalist&textAnimation=pulse&glowColor=green&titleBgOpacity=0&title=myTitle&subtitle=my%20subtitle">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?preset=minimalist&textAnimation=pulse&glowColor=green&titleBgOpacity=0&title=myTitle&subtitle=my%20subtitle">`
 
-<img src="https://dynamic-image-render.vercel.app/api?preset=minimalist&textAnimation=pulse&glowColor=green&titleBgOpacity=0&title=myTitle&subtitle=my%20subtitle">
+<img src="https://dynamic-image-renderer.vercel.app/api?preset=minimalist&textAnimation=pulse&glowColor=green&titleBgOpacity=0&title=myTitle&subtitle=my%20subtitle">
 
 <hr>
 
 ## Dracula preset with flicker animation
-`<img src="https://dynamic-image-render.vercel.app/api?preset=dracula&title=myTitle&subtitle=my%20subtitle&textAnimation=flicker&glowColor=gray">`
+`<img src="https://dynamic-image-renderer.vercel.app/api?preset=dracula&title=myTitle&subtitle=my%20subtitle&textAnimation=flicker&glowColor=gray">`
 
-<img src="https://dynamic-image-render.vercel.app/api?preset=dracula&title=myTitle&subtitle=my%20subtitle&textAnimation=flicker&glowColor=gray">
+<img src="https://dynamic-image-renderer.vercel.app/api?preset=dracula&title=myTitle&subtitle=my%20subtitle&textAnimation=flicker&glowColor=gray">
 
 # How it works?
 Basically, this API get the parameters and render as a SVG, in browser, the SVG is shown as an image.
