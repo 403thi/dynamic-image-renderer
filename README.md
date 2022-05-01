@@ -132,7 +132,7 @@ Parameter | Default
 Parameter | Default | Description
 -----|-----|-----
 `glowColor` | `none` | Color used in animations like "flicker" or "pulse", for example.
-`textAnimation` | `fadein` | Check avaiable animations [here](#animations)
+`textAnimation` | `fadein` | Check available animations [here](#animations)
 
 See more of animations [here](#animations). 
 
