@@ -255,4 +255,4 @@ animationName: {
 ```
 
 # How to add a gradient
-You can find the gradients in [gradient generator](src/utils/generateGradient.ts), just add a array in the `DEFAULT_GRADIENTS` object.
+You can find the gradients in [gradients.ts](src/config/gradients.ts), just add colors for the gradient.

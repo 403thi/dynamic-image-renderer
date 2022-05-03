@@ -1,5 +1,5 @@
 function keyExists(object, key) {
-    return (Object.keys(object).indexOf(key) !== -1)
+    return key in object
 }
 
 export default keyExists
