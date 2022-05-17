@@ -68,6 +68,7 @@ This API generate an image dynamically with your parameters! It's simple to use,
 * [Dracula](#dracula)
 * [Hub](#hub)
 * [Monokai](#monokai)
+* [One Dark](#onedark)
 </details>
 
 <hr>
@@ -201,6 +202,11 @@ Note: You will probably need to change positions of title and subtitle.
 `<img src="https://dynamic-image-renderer.vercel.app/api?preset=monokai">`
 
 <img src="https://dynamic-image-renderer.vercel.app/api?preset=monokai">
+
+## OneDark
+`<img src="https://dynamic-image-renderer.vercel.app/api?preset=oneDark">`
+
+<img src="https://dynamic-image-renderer.vercel.app/api?preset=oneDark">
 
 
 # Using presets and animations
