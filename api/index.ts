@@ -1,6 +1,7 @@
 import express from "express"
 import cors from "cors"
 import routes from "../src/routes"
+import path from "path"
 import "ejs"
 
 class App {
@@ -19,6 +20,7 @@ class App {
     }
 
     middlewares() {
+        this.express.use(express.static(path.join(__dirname,'../src/public')))
         this.express.use(express.json())
         this.express.use(cors())
     }
