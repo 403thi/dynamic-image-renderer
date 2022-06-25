@@ -1,0 +1,52 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo DynamicImage</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" media="all" />
+</head>
+<body>
+    <main>
+        <section class="preview">
+            <h2>Preview</h2>
+            <a href="https://github.com/403thi/dynamic-image-renderer">
+                <img id="previewImage" src="">
+            </a>
+            <span id="url">https://dynamic-image-renderer.vercel.app/api?preset=dracula</span>
+        </section>
+        <section class="actions">
+            <h2>Demo Dynamic Image</h2>
+            <div>
+                <label for="title">title:</label>
+                <input type="text" class="paramsAction" name="title" id="title">
+            </div>
+            <div>
+                <label for="subtitle">subtitle:</label>
+                <input type="text" class="paramsAction" name="subtitle" id="subtitle">
+            </div>
+            <div>
+                <label for="textAnimation">text animation:</label>
+                <input type="text" class="paramsAction" name="textAnimation" id="textAnimation">
+            </div>
+            <div>
+                <label for="glowColor">glowColor:</label>
+                <input type="text" class="paramsAction" name="glowColor" id="glowColor">
+            </div>
+            <div>
+                <label for="preset">preset:</label>
+                <select name="preset" id="preset">
+                    <option value="default" selected>default</option>
+                    <option value="dracula">Dracula</option>
+                    <option value="monokai">Monokai</option>
+                    <option value="hub">Hub</option>
+                    <option value="minimalist">Minimalist</option>
+                    <option value="oneDark">OneDark</option>
+                </select>
+            </div>
+            <button class='btn' id="generate">generate</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
