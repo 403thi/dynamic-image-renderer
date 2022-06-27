@@ -11,6 +11,10 @@
 </div>
 <hr>
 
+# [NEW] Generate and preview your image [here!](https://dynamic-image-renderer.vercel.app/) (BETA)
+
+<hr>
+
 # **Make your repositories and READMEs more beautiful!**
 
 This API generate an image dynamically with your parameters! It's simple to use, customized's and with ready presets!
