@@ -13,7 +13,7 @@ main {
     justify-content: center;
 }
 
-.actions, .preview {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,9 +97,10 @@ main {
         justify-content: center;
         align-items: center;
     }
-    .actions, .preview {
-        width: 90vw;
-    }
     
+    section {width: 90vw;}
+    
+    .actions {height: 400px;}
+    
+    .preview {height: 300px;}
 }
-
