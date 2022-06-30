@@ -1,33 +1,33 @@
 class MobileNavBar {
-	constructor(mobileMenuIcon, mobileMenu) {
-		this.mobileMenuIcon = document.querySelector(mobileMenuIcon)
-		this.mobileMenu = document.querySelector(mobileMenu)
-		this.activeClass = 'active'
-		
-		this.handleClick = this.handleClick.bind(this)
-	}
-	
-	handleClick() {
-		this.mobileMenu.classList.toggle(this.activeClass)
-		this.mobileMenuIcon.classList.toggle(this.activeClass)
-	}
-	
-	clickListener() {
-		this.mobileMenuIcon.addEventListener('click', this.handleClick)
-	}
-	
-	init() {
-		if (this.mobileMenuIcon) {
-			this.clickListener()
-		}
-		
-		return this
-	}
+    constructor(mobileMenuIcon, mobileMenu) {
+        this.mobileMenuIcon = document.querySelector(mobileMenuIcon)
+        this.mobileMenu = document.querySelector(mobileMenu)
+        this.activeClass = 'active'
+
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick() {
+        this.mobileMenu.classList.toggle(this.activeClass)
+        this.mobileMenuIcon.classList.toggle(this.activeClass)
+    }
+
+    clickListener() {
+        this.mobileMenuIcon.addEventListener('click', this.handleClick)
+    }
+
+    init() {
+        if (this.mobileMenuIcon) {
+            this.clickListener()
+        }
+
+        return this
+    }
 }
 
 const mobileNavBar = new MobileNavBar(
-	'.mobileMenuIcon',
-	'.mobileMenu'
+    '.mobileMenuIcon',
+    '.mobileMenu'
 )
 mobileNavBar.init()
 
