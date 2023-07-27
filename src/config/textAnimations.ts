@@ -6,17 +6,18 @@ const textAnimations: TextAnimation = {
         keyframes: `
         @keyframes popup {
             from { font-size: 0px; }
-        }`},
+        }`
+    },
     fadein: {
         style: "animation: fadein 1s linear;",
-        keyframes:`
+        keyframes: `
         @keyframes fadein {
             from { opacity: 0; }
         }`
     },
     pulse: {
         style: "animation: pulse 6s linear infinite;",
-        keyframes:`
+        keyframes: `
         @keyframes pulse {
             0%, 100% { text-shadow: none; }
             50% {
