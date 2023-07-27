@@ -89,30 +89,8 @@
     <% var titleBgWidth = (title.length * (+titleFontSize / 1.5))  %>
     <% var titleBgHeight = +titleFontSize + 10 %>
         
-    <rect width="<%= titleBgWidth + 5 %>" 
-        height="<%= titleBgHeight + 2.5 %>"
-        x="<%= titlePositionX %>%"
-        y="<%= titlePositionY %>%"
-        fill="url(#rainbowGradient)"
-        filter="url(#shadow)"
-        opacity="<%= titleBgRainbowOpacity %>%"
-        stroke="#000"
-        stroke-width="0.2"
-        rx="15" ry="15"
-        transform="translate(-<%= (titleBgWidth + 5) / 2 %>, -<%= (titleBgHeight + 2.5) / 2 %>)"
-    />
-
-    <rect width="<%= titleBgWidth %>" 
-        height="<%= titleBgHeight %>"
-        x="<%= titlePositionX %>%"
-        y="<%= titlePositionY %>%"
-        fill="<%= titleBgColor %>"
-        opacity="<%= titleBgOpacity %>%"
-        stroke="#000"
-        stroke-width="0.2"
-        rx="15" ry="15"
-        transform="translate(-<%= titleBgWidth / 2 %>, -<%= titleBgHeight / 2 %>)"
-    />
+    <%- include('titleBackground/border', { titleBgWidth, titleBgHeight }) %> 
+    <%- include('titleBackground/show', { titleBgWidth, titleBgHeight }) %> 
 
     <!-- subtitle background -->
     <% var subtitleBgWidth = (subtitle.length * (+subtitleFontSize / 1.5))  %>
