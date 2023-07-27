@@ -1,5 +1,7 @@
 import { Router, Request, Response } from "express"
-import ImageController from "./controllers/ImageController"
+import { makeImageController } from "./controllers/factories/makeImageController"
+
+const imageController = makeImageController()
 
 const router = Router()
 
@@ -8,6 +10,6 @@ router.get('/', (req: Request, res: Response) => {
     res.sendFile(__dirname+'/public/demo.html')
 })
 
-router.get('/api', ImageController.index)
+router.get('/api', imageController.handle)
 
 export default router
