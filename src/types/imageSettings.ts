@@ -14,6 +14,7 @@ interface imageSettings {
     titlePositionY: string | number
     titleFontSize: string | number
     titleBgOpacity : string | number
+    titleBgRainbowOpacity: string | number
     titleBgColor : string
     titleShadow: string
 

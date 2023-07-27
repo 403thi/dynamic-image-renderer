@@ -16,6 +16,7 @@ function defaultPreset(): imageSettings {
         titleFontSize: "65",
         titleBgOpacity: "100",
         titleBgColor: "#fff",
+        titleBgRainbowOpacity: "0",
         titleShadow: "false",
 
         subtitle: "dynamic image renderer.",
