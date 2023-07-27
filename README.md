@@ -19,10 +19,13 @@
 - [ ] Controller is doing multiple things, splits into usecases or something like that.
 - [ ] Improve the animation system
     - [ ] Change "animations" to "textAnimations" to be able to add more animation stuff
+    - [ ] Refactor the getAnimation function
 - [ ] Demo Viewer Refactoring
 
 #### Features TODO List
 - [ ] Change font parameter
+- [ ] Query Verification
+- [ ] Add tests
 
 <hr>
 
