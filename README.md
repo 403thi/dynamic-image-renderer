@@ -131,6 +131,8 @@ Parameter | Default | Description
 `titleFontSize` | `65` (px) | Title Font size in pixels
 `titleBgOpacity` | `100` (0..100) | Title background opacity
 `titleBgColor` | `#fff` | Title background color (CSS color)
+`titleBgBorderOpacity` | `0` | 🎉 **new!** The opacity for the background animated border
+`titleBgBorderSpeed` | `10` | 🎉 **new!** The opacity for the background animated border
 `titleShadow` | `false` | If you want title shadow (true, false)
 
 
