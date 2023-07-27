@@ -53,15 +53,7 @@
     <% var subtitleBgWidth = (subtitle.length * (+subtitleFontSize / 1.5))  %>
     <% var subtitleBgHeight = +subtitleFontSize + 10 %>
 
-    <rect width="<%= subtitleBgWidth %>" 
-        height="<%= subtitleBgHeight %>"
-        x="<%= subtitlePositionX %>%"
-        y="<%= subtitlePositionY %>%"
-        fill="<%= subtitleBgColor %>"
-        opacity="<%= subtitleBgOpacity %>%"
-        rx="15" ry="15"
-        transform="translate(-<%= subtitleBgWidth / 2 %>, -<%= subtitleBgHeight / 2 %>)"
-    />
+    <%- include('subtitleBackground/show', { subtitleBgWidth, subtitleBgHeight }) %> 
 
     <%# title definition %>
     <%- include('title/show') %> 
