@@ -14,18 +14,18 @@
 ### WARNING ⚠ The API is in a code refactoring process, so parameters and styles may change in the future.
 
 #### Refactoring TODO List
-- [ ] Improve parameter names
+- [x] Improve parameter names
 - [x] Break down main view into others views
-- [ ] Controller is doing multiple things, splits into usecases or something like that.
-- [ ] Improve the animation system
-    - [x] Change "animations" to "textAnimations" to be able to add more animation stuff
-    - [x] Refactor the getTextAnimation functionality
-- [ ] Demo Viewer Refactoring
+- [x] Controller is doing multiple things, splits into usecases or something like that.
+- [x] Change "animations" to "textAnimations" to be able to add more animation stuff
+- [x] Refactor the getTextAnimation functionality
+- [ ] Demo Viewer Refactoring (**important!**) - Make the generator more dynamic
 
 #### Features TODO List
-- [ ] Change font parameter
-- [ ] Query Verification
-- [ ] Add tests
+- [ ] "Change font" parameter - parameter to the user choice between a set of fonts
+- [ ] Query Verification - verify if sent queries are valids
+- [ ] Add tests - add 
+- [ ] Improve the animation system - might make the text background border animation customizable as possible
 
 <hr>
 
@@ -131,6 +131,8 @@ Parameter | Default | Description
 `titleFontSize` | `65` (px) | Title Font size in pixels
 `titleBgOpacity` | `100` (0..100) | Title background opacity
 `titleBgColor` | `#fff` | Title background color (CSS color)
+`titleBgBorderOpacity` | `0` | 🎉 **new!** The opacity for the background animated border
+`titleBgBorderSpeed` | `10` | 🎉 **new!** The opacity for the background animated border
 `titleShadow` | `false` | If you want title shadow (true, false)
 
 

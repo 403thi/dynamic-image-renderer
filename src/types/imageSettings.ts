@@ -1,8 +1,6 @@
 import TextAnimation from "./textAnimation"
 
-
 interface imageSettings {
-
     // size
     width: number
     height: number
@@ -14,7 +12,8 @@ interface imageSettings {
     titlePositionY: string | number
     titleFontSize: string | number
     titleBgOpacity : string | number
-    titleBgRainbowOpacity: string | number //TODO: Change parameter name to "titleBgBorderOpacity" or something like it
+    titleBgBorderOpacity: string | number
+    titleBgBorderSpeed: string
     titleBgColor : string
     titleShadow: string
 
@@ -38,7 +37,6 @@ interface imageSettings {
 
     // others
     backgroundColor: string
-    
-};
+}
 
 export default imageSettings
