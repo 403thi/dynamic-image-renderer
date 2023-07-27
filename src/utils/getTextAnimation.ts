@@ -1,7 +1,7 @@
 import textAnimations from "../config/textAnimations";
 import keyExists from "./keyExists"
 
-function getAnimation(textAnimation: string) {
+function getTextAnimation(textAnimation: string) {
 
     if (keyExists(textAnimations, textAnimation)) {
         const { style, keyframes } = textAnimations[textAnimation]
@@ -14,4 +14,4 @@ function getAnimation(textAnimation: string) {
     return "";
 }
 
-export default getAnimation
+export default getTextAnimation
