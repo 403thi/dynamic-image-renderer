@@ -14,7 +14,7 @@
 ### WARNING ⚠ The API is in a code refactoring process, so parameters and styles may change in the future.
 
 #### Refactoring TODO List
-- [ ] Improve parameter names
+- [x] Improve parameter names
 - [x] Break down main view into others views
 - [x] Controller is doing multiple things, splits into usecases or something like that.
 - [ ] Improve the animation system
