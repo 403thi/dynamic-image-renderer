@@ -2,7 +2,7 @@
     // get animation style and keyframes
     textAnimation = getAnimation(textAnimation) 
 %>
-<%# SVG definition %>
+
 <svg xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     version="1.1"
@@ -14,7 +14,6 @@
     `%>">
 
     <style>
-        /* SVG STYLE */
         :root {
             --glow-color: <%= glowColor %>;
             --title-font-size: <%= titleFontSize %>px;
@@ -38,10 +37,9 @@
     <!-- frame border -->
     <%- include('frameborder/show') %> 
 
+    <!-- <defs>  element -->
     <%- include('svg/defs') %> 
 
-    <%# texts backgrounds %>
-    
     <!-- title background -->
     <% var titleBgWidth = (title.length * (+titleFontSize / 1.5))  %>
     <% var titleBgHeight = +titleFontSize + 10 %>
