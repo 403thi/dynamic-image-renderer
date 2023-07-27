@@ -27,18 +27,7 @@
             --text-font-family: 'Franklin Gothic', Arial, sans-serif;
             --text-font-weight: bold;
         }
-        .title {
-            font-family: var(--text-font-family);
-            font-size: var(--title-font-size);
-            font-weight: var(--text-font-weight);
-            fill: var(--title-color);
-            
-            <%= titleShadow === "true" ?
-                "text-shadow: 0 0 10px #000;"
-                : ""
-                %>
-            <%= textAnimation.style %>
-        }
+        <%- include('title/css'), { titleShadow, textAnimation } %>
         .subtitle {
             font-family: var(--text-font-family);
             font-size: var(--subtitle-font-size);
@@ -160,13 +149,7 @@
     />
 
     <%# title definition %>
-    <text text-anchor="middle"
-    alignment-baseline="middle" 
-          x="<%= titlePositionX %>%"
-          y="<%= titlePositionY %>%"
-          class="title">
-        <%= title %>
-    </text>
+    <%- include('title/show', { titlePositionX, titlePositionY, title }) %> 
     
     <%# subtitle definition %>
     <text text-anchor="middle"

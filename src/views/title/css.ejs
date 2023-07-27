@@ -1,0 +1,12 @@
+.title {
+  font-family: var(--text-font-family);
+  font-size: var(--title-font-size);
+  font-weight: var(--text-font-weight);
+  fill: var(--title-color);
+  
+  <%= titleShadow === "true" ?
+      "text-shadow: 0 0 10px #000;"
+      : ""
+      %>
+  <%= textAnimation.style %>
+}
