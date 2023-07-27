@@ -24,7 +24,7 @@
 #### Features TODO List
 - [ ] "Change font" parameter - parameter to the user choice between a set of fonts
 - [ ] Query Verification - verify if sent queries are valids
-- [ ] Add tests - add 
+- [ ] Add tests
 - [ ] Improve the animation system - might make the text background border animation customizable as possible
 
 <hr>
