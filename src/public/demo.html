@@ -1,0 +1,72 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo DynamicImage</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" media="all" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="">Dynamic Image Renderer</a>
+            <ul class="navList">
+                <li><a href="https://github.com/403thi/dynamic-image-renderer" class="navItem">Project on GitHub</a></li>
+                <li><a href="https://github.com/403thi/dynamic-image-renderer#basic-usage" class="navItem">Basic usage</a></li>
+            </ul>
+        <div class="mobileMenuIcon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        </nav>
+        <div class="mobileMenu">
+            <ul class="mobileNavList">
+                <li><a href="https://github.com/403thi/dynamic-image-renderer" class="navItem">GitHub Project</a></li>
+                <li><a href="https://github.com/403thi/dynamic-image-renderer#basic-usage" class="navItem">Basic usage</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="preview">
+            <h2>Preview</h2>
+            <a href="https://github.com/403thi/dynamic-image-renderer">
+                <img id="previewImage" src="https://dynamic-image-renderer.vercel.app/api?preset=dracula">
+            </a>
+            <span id="url">https://dynamic-image-renderer.vercel.app/api?preset=dracula</span>
+        </section>
+        <section class="actions">
+            <h2>Parameters</h2>
+            <div>
+                <label for="title">title:</label>
+                <input type="text" class="paramsAction" name="title" id="title">
+            </div>
+            <div>
+                <label for="subtitle">subtitle:</label>
+                <input type="text" class="paramsAction" name="subtitle" id="subtitle">
+            </div>
+            <div>
+                <label for="textAnimation">text animation:</label>
+                <input type="text" class="paramsAction" name="textAnimation" id="textAnimation">
+            </div>
+            <div>
+                <label for="glowColor">glowColor:</label>
+                <input type="text" class="paramsAction" name="glowColor" id="glowColor">
+            </div>
+            <div>
+                <label for="preset">preset:</label>
+                <select name="preset" id="preset">
+                    <option value="default" selected>default</option>
+                    <option value="dracula">Dracula</option>
+                    <option value="monokai">Monokai</option>
+                    <option value="hub">Hub</option>
+                    <option value="minimalist">Minimalist</option>
+                    <option value="oneDark">OneDark</option>
+                </select>
+            </div>
+            <button class='btn' id="generate">generate</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
