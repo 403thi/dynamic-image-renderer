@@ -6,33 +6,25 @@ import getPreset from "../utils/getPreset"
 import adjustHeightIfNotValid from "../utils/adjustHeightIfNotValid"
 import adjustBackgroundIfNotValid from "../utils/adjustBackgroundIfNotValid"
 import { queryParameters } from "../types/queryParameters"
+import { DefineImageSettingsUseCase } from "../usecases/define-image-settings"
+import { ValidateAndAdjustSettingsUseCase } from "../usecases/validate-and-adjust-settings"
 
 class ImageController {
 
-    settings: imageSettings
+    constructor(
+        public defineImageSettings: DefineImageSettingsUseCase,
+        public validateAndAdjustSettings: ValidateAndAdjustSettingsUseCase
+    ) {}
 
-    index = (req: Request, res: Response) => {
-    
-        this.defineSettings(req.query as unknown as queryParameters)
-        this.verifyParameters()
+    handle = (req: Request, res: Response) => {
+        const query = req.query as unknown as queryParameters
+
+        let settings = this.defineImageSettings.execute({ query })
+        settings = this.validateAndAdjustSettings.execute({ settings })
+
         res.set('content-type', 'image/svg+xml')
-
-        res.render('main', this.settings)
+        res.render('main', settings)
     }
-
-    private defineSettings(query: queryParameters) {
-        this.settings = {
-            ...getPreset(query.preset),
-            ...query,
-        }
-        this.settings.textAnimation = getTextAnimation(this.settings.textAnimation as string)
-    }
-
-    private verifyParameters(): void {
-        this.settings.height = adjustHeightIfNotValid(this.settings.height)
-        this.settings.backgroundColor = adjustBackgroundIfNotValid(this.settings.backgroundColor)
-    }
-    
 }
 
-export default new ImageController()
+export { ImageController }
