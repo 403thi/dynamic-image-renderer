@@ -15,7 +15,7 @@
 
 #### Refactoring TODO List
 - [ ] Improve parameter names
-- [ ] Break down main view into others views
+- [x] Break down main view into others views
 - [ ] Controller is doing multiple things, splits into usecases or something like that.
 - [ ] Improve the animation system
     - [ ] Change "animations" to "textAnimations" to be able to add more animation stuff
