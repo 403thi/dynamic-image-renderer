@@ -1,0 +1,27 @@
+<defs>
+  <!-- Define the gradient for the border -->
+  <linearGradient id="rainbowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="red">
+        <animate attributeName="stop-color" values="red;orange;yellow;green;blue;indigo;violet;red" dur="10s" repeatCount="indefinite" />
+    </stop>
+    <stop offset="20%" stop-color="orange">
+        <animate attributeName="stop-color" values="orange;yellow;green;blue;indigo;violet;red;orange" dur="10s" repeatCount="indefinite" />
+    </stop>
+    <stop offset="40%" stop-color="yellow">
+        <animate attributeName="stop-color" values="yellow;green;blue;indigo;violet;red;orange;yellow" dur="10s" repeatCount="indefinite" />
+    </stop>
+    <stop offset="60%" stop-color="green">
+        <animate attributeName="stop-color" values="green;blue;indigo;violet;red;orange;yellow;green" dur="10s" repeatCount="indefinite" />
+    </stop>
+    <stop offset="80%" stop-color="blue">
+        <animate attributeName="stop-color" values="blue;indigo;violet;red;orange;yellow;green;blue" dur="10s" repeatCount="indefinite" />
+    </stop>
+    <stop offset="100%" stop-color="indigo">
+        <animate attributeName="stop-color" values="indigo;violet;red;orange;yellow;green;blue;indigo" dur="10s" repeatCount="indefinite" />
+    </stop>
+  </linearGradient>
+
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+  </filter>
+</defs>

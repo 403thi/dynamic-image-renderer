@@ -14,7 +14,7 @@ interface imageSettings {
     titlePositionY: string | number
     titleFontSize: string | number
     titleBgOpacity : string | number
-    titleBgRainbowOpacity: string | number
+    titleBgRainbowOpacity: string | number //TODO: Change parameter name to "titleBgBorderOpacity" or something like it
     titleBgColor : string
     titleShadow: string
 

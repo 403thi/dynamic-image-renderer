@@ -1,0 +1,12 @@
+.subtitle {
+  font-family: var(--text-font-family);
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--text-font-weight);
+  fill: var(--subtitle-color);
+
+  <%= subtitleShadow === "true" ?
+      "text-shadow: 0 0 10px #000;"
+      : ""
+  %>
+  <%= textAnimation.style %>
+}
