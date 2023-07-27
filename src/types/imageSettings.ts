@@ -1,4 +1,4 @@
-import textAnimation from "./textAnimation"
+import TextAnimation from "./textAnimation"
 
 
 interface imageSettings {
@@ -30,7 +30,7 @@ interface imageSettings {
 
     // effects
     glowColor: string
-    textAnimation: string | textAnimation
+    textAnimation: string | TextAnimation[string]
     
     // border
     borderOpacity: string | number

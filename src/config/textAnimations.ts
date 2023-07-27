@@ -1,22 +1,23 @@
 import TextAnimation from "../types/textAnimation"
 
-const animations: TextAnimation = {
+const textAnimations: TextAnimation = {
     popup: {
         style: "animation: popup 0.6s ease;",
         keyframes: `
         @keyframes popup {
             from { font-size: 0px; }
-        }`},
+        }`
+    },
     fadein: {
         style: "animation: fadein 1s linear;",
-        keyframes:`
+        keyframes: `
         @keyframes fadein {
             from { opacity: 0; }
         }`
     },
     pulse: {
         style: "animation: pulse 6s linear infinite;",
-        keyframes:`
+        keyframes: `
         @keyframes pulse {
             0%, 100% { text-shadow: none; }
             50% {
@@ -42,4 +43,4 @@ const animations: TextAnimation = {
     },
 }
 
-export default animations
+export default textAnimations
