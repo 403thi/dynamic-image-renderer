@@ -17,6 +17,7 @@ function defaultPreset(): imageSettings {
         titleBgOpacity: "100",
         titleBgColor: "#fff",
         titleBgBorderOpacity: "0",
+        titleBgBorderSpeed: "10",
         titleShadow: "false",
 
         subtitle: "dynamic image renderer.",

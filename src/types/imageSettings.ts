@@ -13,6 +13,7 @@ interface imageSettings {
     titleFontSize: string | number
     titleBgOpacity : string | number
     titleBgBorderOpacity: string | number
+    titleBgBorderSpeed: string
     titleBgColor : string
     titleShadow: string
 
