@@ -1,14 +1,14 @@
-import animations from "../config/animations";
+import textAnimations from "../config/textAnimations";
 import keyExists from "./keyExists"
 
-function getAnimation(animation) {
+function getAnimation(textAnimation: string) {
 
-    if (keyExists(animations, animation)) {
-        const { style, keyframes } = animations[animation]
+    if (keyExists(textAnimations, textAnimation)) {
+        const { style, keyframes } = textAnimations[textAnimation]
 
         return {
-            style: style,
-            keyframes: keyframes
+            style,
+            keyframes
         }
     }
     return "";

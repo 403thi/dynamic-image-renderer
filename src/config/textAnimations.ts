@@ -1,6 +1,6 @@
 import TextAnimation from "../types/textAnimation"
 
-const animations: TextAnimation = {
+const textAnimations: TextAnimation = {
     popup: {
         style: "animation: popup 0.6s ease;",
         keyframes: `
@@ -42,4 +42,4 @@ const animations: TextAnimation = {
     },
 }
 
-export default animations
+export default textAnimations

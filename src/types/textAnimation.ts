@@ -1,8 +1,8 @@
-interface textAnimation {
+interface TextAnimation {
     [name: string]: {
         style: string
         keyframes: string
     }
 }
 
-export default textAnimation
+export default TextAnimation
