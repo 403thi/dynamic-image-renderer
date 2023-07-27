@@ -29,14 +29,7 @@
         }
         <%- include('title/css'), { titleShadow, textAnimation } %>
         <%- include('subtitle/css'), { subtitleShadow, textAnimation } %>
-        
-        .border-line {
-
-            stroke: var(--border-color);
-            stroke-width: var(--border-width);
-            opacity: var(--border-opacity);
-
-        }
+        <%- include('frameborder/css')%>
         
         .main-stop {
             stop-color: red;
@@ -59,11 +52,8 @@
         <%= textAnimation.keyframes %>
     </style>
 
-    <!-- border -->    
-    <line class="border-line" x2="<%=width%>" /> <!-- top: start in x: 0 and go to x: 560 -->
-    <line class="border-line" x1="<%=width%>" x2="<%=width%>" y2="<%= height %>" /> <!-- right: x forever in: MAX_WIDTH  start y:TOP and go to BOTTOM -->
-    <line class="border-line" x1="<%=width%>" y1="<%= height %>" y2="<%= height %>"/> <!-- bottom: x: MAX_WIDTH to 0 and Y in BOTTOM -->
-    <line class="border-line" y2="<%= height %>"/> <!-- left: start all in 0 and go to down  -->
+    <!-- frame border -->
+    <%- include('frameborder/show', { width, height }) %> 
 
     <defs>
         <!-- Define the gradient for the border -->
