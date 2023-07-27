@@ -13,7 +13,7 @@
 
 # **Make your repositories and READMEs more beautiful!**
 
-This API generate an image dynamically with your parameters! It's simple to use, customized's and with ready presets!
+This API generate an image dynamically with your parameters! It's simple to use, customizable and with ready presets!
 
 # Navigation
 <details open>
@@ -75,9 +75,9 @@ This API generate an image dynamically with your parameters! It's simple to use,
 
 # About the project
 
-The API it's made with [Express](https://expressjs.com/) and [TypeScript](https://www.typescriptlang.org/).
+The API is made with [Express](https://expressjs.com/) and [TypeScript](https://www.typescriptlang.org/).
 
-The idea of the project is make the API stay in continuous progression with new presets and features, then: [Pull Requests](https://github.com/403thi/dynamic-image-renderer/pulls) and [ideas](https://github.com/403thi/dynamic-image-renderer/labels/%F0%9F%92%A1%20Idea) are welcome! Read [how it works?](#how-it-works) for more information about the project structure.
+The project idea is make the API be in continuous progression with new presets and features, then: [Pull Requests](https://github.com/403thi/dynamic-image-renderer/pulls) and [ideas](https://github.com/403thi/dynamic-image-renderer/labels/%F0%9F%92%A1%20Idea) are welcome! Read [how it works?](#how-it-works) for more information about the project structure.
 
 *This is my first open-source project, so let's share learning! :)*
 
@@ -89,7 +89,7 @@ In HTML, link the URL in `src`
 
 `<img src="https://dynamic-image-renderer.vercel.app/api?title=myTitle&subtitle=mySubtitle">`
 
-In Markdown, you can uses HTML way or the markdown method.
+In Markdown, you can use HTML way or the markdown one.
 
 `![Image Description](https://dynamic-image-renderer.vercel.app/api?title=myTitle&subtitle=mySubtitle)`
 
@@ -108,8 +108,8 @@ Parameter | Default | Description
 -----|-----|-----
 `title` | `dynamic!` | Title content
 `titleColor` | `#111111` | Title color (CSS color: rgb, hex, etc)
-`titlePositionX` | `50` (0..100) | Title position in X axis (This position is calculated in percentage)
-`titlePositionY` | `50` (0..100) | Title position in Y axias
+`titlePositionX` | `50` (0..100) | X axis title position (This position is calculated in percentage)
+`titlePositionY` | `50` (0..100) | Y axis title position
 `titleFontSize` | `65` (px) | Title Font size in pixels
 `titleBgOpacity` | `100` (0..100) | Title background opacity
 `titleBgColor` | `#fff` | Title background color (CSS color)
@@ -132,7 +132,7 @@ Parameter | Default
 ## Effects
 Parameter | Default | Description
 -----|-----|-----
-`glowColor` | `none` | Color used in animations like "flicker" or "pulse", for example.
+`glowColor` | `none` | Color used in animations such as "flicker" or "pulse".
 `textAnimation` | `fadein` | Check available animations [here](#animations)
 
 See more of animations [here](#animations). 
