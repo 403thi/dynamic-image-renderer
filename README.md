@@ -17,15 +17,15 @@
 - [x] Improve parameter names
 - [x] Break down main view into others views
 - [x] Controller is doing multiple things, splits into usecases or something like that.
-- [ ] Improve the animation system
-    - [x] Change "animations" to "textAnimations" to be able to add more animation stuff
-    - [x] Refactor the getTextAnimation functionality
-- [ ] Demo Viewer Refactoring
+- [x] Change "animations" to "textAnimations" to be able to add more animation stuff
+- [x] Refactor the getTextAnimation functionality
+- [ ] Demo Viewer Refactoring (**important!**) - Make the generator more dynamic
 
 #### Features TODO List
-- [ ] Change font parameter
-- [ ] Query Verification
-- [ ] Add tests
+- [ ] "Change font" parameter - parameter to the user choice between a set of fonts
+- [ ] Query Verification - verify if sent queries are valids
+- [ ] Add tests - add 
+- [ ] Improve the animation system - might make the text background border animation customizable as possible
 
 <hr>
 
