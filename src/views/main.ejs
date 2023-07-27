@@ -27,27 +27,10 @@
             --text-font-family: 'Franklin Gothic', Arial, sans-serif;
             --text-font-weight: bold;
         }
+        
         <%- include('title/css') %>
         <%- include('subtitle/css')%>
         <%- include('frameborder/css')%>
-        
-        .main-stop {
-            stop-color: red;
-        }
-        .alt-stop {
-            stop-color: green;
-        }
-
-        .abc {
-            animation: glowing 20s linear infinite;
-        }
-
-        @keyframes glowing {
-            0% { x: 0 0; }
-            50% { x: 400% 0; }
-            100% { x: 0 0; }
-        }
-
 
         <%= textAnimation.keyframes %>
     </style>
