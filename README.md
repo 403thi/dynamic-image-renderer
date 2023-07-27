@@ -11,7 +11,7 @@
 </div>
 <hr>
 
-# [NEW] Generate and preview your image [here!](https://dynamic-image-renderer.vercel.app/) (BETA)
+### WARNING ⚠ The API is in a code refactoring process, so parameters and styles may change in the future.
 
 <hr>
 
