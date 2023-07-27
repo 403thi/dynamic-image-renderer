@@ -19,7 +19,7 @@
 - [ ] Controller is doing multiple things, splits into usecases or something like that.
 - [ ] Improve the animation system
     - [x] Change "animations" to "textAnimations" to be able to add more animation stuff
-    - [ ] Refactor the getAnimation function
+    - [x] Refactor the getTextAnimation functionality
 - [ ] Demo Viewer Refactoring
 
 #### Features TODO List
